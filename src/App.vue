@@ -1,9 +1,8 @@
 <template>
   <div>
-    <TestVuetify />
+    <router-view></router-view>
   </div>
 </template>
 
 <script setup>
-import TestVuetify from './components/TestVuetify.vue';
 </script>

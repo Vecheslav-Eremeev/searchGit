@@ -11,8 +11,11 @@
   
         <v-spacer></v-spacer>
   
-        <v-btn icon>
-          <v-icon>mdi-export</v-icon>
+        <v-btn to="/">
+          Home
+        </v-btn>
+        <v-btn to="/about">
+          About
         </v-btn>
       </v-toolbar>
     </div>
