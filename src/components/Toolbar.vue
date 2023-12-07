@@ -1,22 +1,17 @@
 <template>
-    <div>
-      <v-toolbar
-        dark
-        prominent
-        image="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
-      >
-        <v-app-bar-nav-icon></v-app-bar-nav-icon>
-  
-        <v-toolbar-title>Vuetify</v-toolbar-title>
-  
-        <v-spacer></v-spacer>
-  
-        <v-btn to="/">
-          Home
-        </v-btn>
-        <v-btn to="/about">
-          About
-        </v-btn>
-      </v-toolbar>
-    </div>
-  </template>
+  <v-toolbar color="blue-darken-3">
+    <v-toolbar-title>{{ title }}</v-toolbar-title>
+
+    <v-spacer></v-spacer>
+
+    <v-btn to="/" exact> Home </v-btn>
+    <v-btn to="/users"> Users </v-btn>
+    <v-btn to="/repositories"> Repositories </v-btn>
+  </v-toolbar>
+</template>
+
+<script setup>
+import { ref } from "vue";
+
+const title = ref("Search GitHub");
+</script>
