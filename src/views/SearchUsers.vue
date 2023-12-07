@@ -34,7 +34,7 @@ const users = ref([]);
 
 const search = () => {
   if (nameUser.value !== "") {
-    const url = `http://api.github.com/search/users?q=${nameUser.value}`;
+    const url = `https://api.github.com/search/users?q=${nameUser.value}`;
     axios.get(url).then((response) => (users.value = response.data.items));
     nameUser.value = "";
   }
